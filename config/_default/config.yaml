@@ -6,7 +6,7 @@ theme: "starter-hugo-academic"
 
 title: Greg Macfarlane # Website name
 baseurl: 'https://gregmacfarlane.github.io/' # Website URL
-copyright: '© {2022} Greg Macfarlane' # Footer text, e.g. '© {year} Me'
+copyright: '© {year} Greg Macfarlane' # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE

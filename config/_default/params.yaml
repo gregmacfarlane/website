@@ -5,7 +5,7 @@
 
 # Appearance
 
-theme: minimal
+theme: ocean
 day_night: true
 font: ''
 font_size: L
@@ -38,7 +38,7 @@ contact_links:
     icon_pack: fab
     name: DM Me
     link: 'https://twitter.com/greg_macfarlane'
-    
+
 # Site header
 
 main_menu:
