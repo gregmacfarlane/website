@@ -10,6 +10,7 @@ image:
   focal_point: ''
 ---
 
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <p>I came across this graphic from an
@@ -54,6 +55,8 @@ straight, we are going to use straight miles for now.</p>
   scale_color_discrete(guide = FALSE) +
   ylab(&quot;Passenger Miles&quot;) + xlab(&quot;Year&quot;) +
   theme_bw()</code></pre>
+<pre><code>## Warning: It is deprecated to specify `guide = FALSE` to remove a guide. Please
+## use `guide = &quot;none&quot;` instead.</code></pre>
 <p><img src="/post/safety/2020-06-02-transit-safety_files/figure-html/passmiles-plot-1.png" width="672" /></p>
 </div>
 <div id="fatalities-by-mode" class="section level2">
@@ -79,6 +82,11 @@ number of redundant categories.</p>
   ylab(&quot;Fatalities&quot;) + xlab(&quot;Year&quot;) +
   theme_bw()</code></pre>
 <pre><code>## Warning: Removed 6 row(s) containing missing values (geom_path).</code></pre>
+<pre><code>## Warning: Removed 6 rows containing missing values (geom_dl).
+
+## Warning: Removed 6 rows containing missing values (geom_dl).</code></pre>
+<pre><code>## Warning: It is deprecated to specify `guide = FALSE` to remove a guide. Please
+## use `guide = &quot;none&quot;` instead.</code></pre>
 <p><img src="/post/safety/2020-06-02-transit-safety_files/figure-html/fatalities-plot-1.png" width="672" /></p>
 </div>
 <div id="fatalities-per-100-million-miles" class="section level2">
@@ -112,6 +120,7 @@ only group-levels with the following pairs:</p>
   ) %&gt;%
   group_by(Group, Mode, year) %&gt;%
   summarise(passmiles = sum(passmiles))</code></pre>
+<pre><code>## `summarise()` has grouped output by &#39;Group&#39;, &#39;Mode&#39;. You can override using the `.groups` argument.</code></pre>
 <pre class="r"><code>fatalities_summary &lt;- fatalities %&gt;%
   mutate(
     keep = case_when(
@@ -128,9 +137,9 @@ only group-levels with the following pairs:</p>
     Mode = ifelse(Group == &quot;Highway&quot;, &quot;All&quot;, Mode), 
   ) %&gt;% filter(keep) %&gt;%
   group_by(Group, Mode, year) %&gt;%
-  summarise(fatalities = sum(fatalities))
-  
-# remove transit rail fatalities from rail 
+  summarise(fatalities = sum(fatalities))</code></pre>
+<pre><code>## `summarise()` has grouped output by &#39;Group&#39;, &#39;Mode&#39;. You can override using the `.groups` argument.</code></pre>
+<pre class="r"><code># remove transit rail fatalities from rail 
 transit_rail_fatalities &lt;- fatalities_summary %&gt;% filter(Mode == &quot;Rail&quot;) %&gt;% pull(fatalities)
   
 fatalities_summary &lt;- fatalities_summary %&gt;%
@@ -158,6 +167,8 @@ fatalities_summary &lt;- fatalities_summary %&gt;%
   ylab(&quot;Fatalities per 100 Million Passenger Miles&quot;) + 
   xlab(&quot;Year&quot;) + 
   theme_bw()</code></pre>
+<pre><code>## Warning: It is deprecated to specify `guide = FALSE` to remove a guide. Please
+## use `guide = &quot;none&quot;` instead.</code></pre>
 <p><img src="/post/safety/2020-06-02-transit-safety_files/figure-html/fatal-rate-plot-1.png" width="672" /></p>
 <p>From my understanding, if a light rail train hits a pedestrian, it counts as a
 highway fatality <em>and</em> a transit fatality. Given that a large number of the
