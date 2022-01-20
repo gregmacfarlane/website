@@ -38,14 +38,14 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/gregmacfarlane
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/gregorymacfarlane
+- icon: file-alt
+  icon_pack: fas
+  link: uploads/cv.pdf
 superuser: true
 title: Greg Macfarlane
 ---
 
-I am an assistant professor in the Civil and Environmental Engineering
+I am an assistant professor in the Civil and Construction Engineering
 department at Brigham Young University. I research transportation engineering
 and planning, with a specific emphasis in using modern passive data products to
 build models of travel behavior and land development.

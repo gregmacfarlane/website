@@ -7,7 +7,8 @@ widget: accomplishments
 headless: true
 
 # Order that this section appears on the page.
-weight: 50
+weight: 0
+active: false
 
 # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
 title: 'Accomplish&shy;ments'
@@ -49,5 +50,5 @@ item:
   url: ""
 
 design:
-  columns: '2' 
+  columns: '2'
 ---
