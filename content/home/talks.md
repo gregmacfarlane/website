@@ -7,8 +7,8 @@ widget: pages
 headless: true
 
 # Order that this section appears on the page.
-weight:
-active: false
+weight: 80
+active: true
 
 title: 'Recent & Upcoming Talks'
 subtitle:
