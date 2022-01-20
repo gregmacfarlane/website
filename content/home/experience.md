@@ -22,28 +22,30 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: CEO
-    company: GenCoin
-    company_url: ''
-    company_logo: org-gc
-    location: California
+  - title: Assistant Professor
+    company: Brigham Young University
+    company_url: 'https://www.byu.edu'
+    company_logo: byu-logo
+    location: Provo, Utah
     date_start: '2021-01-01'
     date_end: ''
-    description: |2-
-        Responsibilities include:
-        
-        * Analysing
-        * Modelling
-        * Deploying
-        
-  - title: Professor of Semiconductor Physics
-    company: University X
-    company_url: ''
-    company_logo: org-x
-    location: California
-    date_start: '2016-01-01'
-    date_end: '2020-12-31'
-    description: Taught electronic engineering and researched semiconductor physics.
+    description: Assistant professor in the department of Civil and Construction Engineering.
+  - title: Analyst
+    company: Transport Foundry
+    company_url: 'https://www.transportfoundry.com'
+    company_logo: tf-logo
+    location: Raleigh, North Carolina
+    date_start: '2017-03-31'
+    date_end: '2018-10-31'
+    description: Worked on CityCast, a travel model built on modern data sources.
+  - title: Technical Principal
+    company: WSP
+    company_url: 'https://www.wsp.com/en-US'
+    company_logo: wsp-logo
+    location: Raleigh, North Carolina
+    date_start: '2014-05-01'
+    date_end: '2017-03-31'
+    description: Developed travel demand models for public and private sector clients.
 
 design:
   columns: '2'
